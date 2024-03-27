@@ -9,7 +9,7 @@ return {
 			-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 		},
 		config = function()
-			vim.keymap.set("n", "<leader>b", "<CMD>Neotree toggle<CR>")
+			vim.keymap.set("n", "<leader>t", "<CMD>Neotree toggle<CR>", { desc = "Toggle File Tree" })
 			require("neo-tree").setup({
 				window = {
 					width = 30, -- applies to left and right positions
