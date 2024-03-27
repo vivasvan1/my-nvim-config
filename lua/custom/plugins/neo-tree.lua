@@ -12,6 +12,9 @@ return {
 			vim.keymap.set("n", "<leader>b", "<CMD>Neotree toggle<CR>")
 			require("neo-tree").setup({
 				window = {
+					width = 30, -- applies to left and right positions
+					height = 15, -- applies to top and bottom positions
+					auto_expand_width = false, -- expand the window when file exceeds the window width. does not work with position = "float"
 					mappings = {
 						["<tab>"] = function(state)
 							state.commands["open"](state)

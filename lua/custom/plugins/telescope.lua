@@ -48,7 +48,7 @@ return {
 			require("telescope").load_extension("file_browser")
 			vim.keymap.set(
 				"n",
-				"<leader>ff",
+				"<leader>fb",
 				":Telescope file_browser<CR>",
 				{ desc = "[F]ind [F]iles with file_browser" }
 			)
@@ -56,7 +56,7 @@ return {
 			-- open file_browser with the path of the current buffer
 			vim.keymap.set(
 				"n",
-				"<leader>ff",
+				"<leader>fb",
 				":Telescope file_browser path=%:p:h select_buffer=true<CR>",
 				{ desc = "[F]ind [F]iles with file_browser" }
 			)
